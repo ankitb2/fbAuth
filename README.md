@@ -1,3 +1,43 @@
+# DEPLOYMENT GUIDELINES
+
+Include a `.env` file in the root directory of the project containing the following fields.
+
+```
+REACT_APP_API_KEY= // the api key provided in the configs for firebase project
+REACT_APP_AUTH_DOMAIN= // auth domain of your project
+REACT_APP_PROJECTID= // project id
+REACT_APP_STORAGE_BUCKET= // storage bucked address
+REACT_APP_MESSAGINGSENDERID= // message sender id
+REACT_APP_APP_ID= // app id
+```
+
+You can find this configs in your firebase projects dashboard.
+For further help - read this [article](https://support.google.com/firebase/answer/7015592)
+
+# Libraries used
+
+firebase: 9.6.8
+
+react: 17.0.2
+
+react-dom: 17.0.2
+
+react-firebase-hooks: 5.0.3
+
+react-redux: 7.2.6
+
+react-router-dom: 6.2.2
+
+react-scripts: 5.0.0
+
+redux: 4.1.2
+
+All the above mentioned libraries can be found on npm;
+
+# Authentication
+
+Authentication is done via firebase, Registration is done using email and password.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

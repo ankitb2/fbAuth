@@ -1,0 +1,31 @@
+.register {
+    display: flex;
+    justify-content: center;
+}
+
+.container_register {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.textInput_register {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+
+.button_register {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right, rgb(20, 63, 255) , rgb(0, 132, 255));
+    border-radius: 10px;
+    border-width: 1px;
+}
