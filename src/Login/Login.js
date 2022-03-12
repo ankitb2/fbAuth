@@ -42,6 +42,21 @@ const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder="Type your Password"
                     />
+
+                    <div className="checkbox_login">
+                        <input
+                            defaultChecked={checked}
+                            onChange={() => setChecked(!checked)}
+                            type="checkbox"
+                            id="terms"
+                            value="terms">
+                        </input> <label htmlFor="terms">
+                            By logging in, I accept the terms & conditions of the platform
+                        </label>
+
+                    </div>
+
+                    <br></br>
                     <button
                         disabled={!checked}
                         className="button_login"
@@ -50,15 +65,7 @@ const Login = () => {
                     </button>
                 </div>
             </div>
-            <input
-                defaultChecked={checked}
-                onChange={() => setChecked(!checked)}
-                type="checkbox"
-                id="terms"
-                value="terms">
-            </input> <label htmlFor="terms">
-                By logging in, I accept the terms & conditions of the platform
-            </label>
+
             <div>
                 <Link to="/register">Create an account instead</Link>
             </div>
